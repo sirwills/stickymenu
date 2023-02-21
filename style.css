@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    background-color: lightblue;
+    align-content: center;    
+    padding-right: 40px;
+    position:fixed;
+    
+
+
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-between;
+
+
+}
+
+ nav img{
+    height: 50px;
+}
+
+nav a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    align-content: center;
+
+    
+}
+nav label{
+    color: blue;
+    text-decoration: none;
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.links{
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+
+}
+
+main{
+    height: 600px;
+    width: 100%;
+    background-image: url(./smokegirl.jpg);
+    background-size: cover;
+}
+
+
+section{
+    height: 500px;
+    margin-top: 30px;
+}
+
+.links a{
+    padding: 6px
+
+    
+}
+
+
+.menu-button{
+    background-color: lightblue;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 2px  solid orangered;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: orangered;
+    min-width: 18px;
+    z-index: 5;
+
+
+}
+
+.dropdown-menu a:hover{
+    background-color: orangered;
+    color: #fff;
+    position: relative;
+}
+.links:hover .dropdown-menu{
+    display: flex;
+    flex-flow: column;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.links:hover .dropdown-menu{
+    background-color: lightblue;
+    
+}
